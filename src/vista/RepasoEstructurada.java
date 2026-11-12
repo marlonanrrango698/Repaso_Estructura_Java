@@ -36,8 +36,12 @@ public class RepasoEstructurada {
         System.out.println("El promedio del estudiantes es: " + prom);
 
         
-        
         // Ejercicio 2
+        // Edad de la madre al dar a luz: Calcular la diferencia de edad entre una madre y su hijo dadas ambas edades.
+        int edadmadre=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese la edad de la Madre"));
+        int edadhijo=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese la edad del Hijo"));
+        int resta= edadmadre - edadhijo;
+        System.out.println("La edad de la madrea al dar a luz es: " + resta);
     }
     
     
