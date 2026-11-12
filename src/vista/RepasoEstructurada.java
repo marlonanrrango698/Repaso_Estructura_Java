@@ -27,7 +27,14 @@ public class RepasoEstructurada {
         System.out.println("La suma es: " + suma);
         
         // Ejercicio 1
-        
+        // Cálculo de promedio: Solicitar tres calificaciones, calcular el promedio aritmético y mostrarlo.
+        double nota1=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese la primera nota"));
+        double nota2=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese la segunda nota"));
+        double nota3=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese la tercera nota"));
+        double sum= nota1 + nota2 + nota3;
+        double prom= sum / 3;
+        System.out.println("El promedio del estudiantes es: " + prom);
+
         
         
         // Ejercicio 2
