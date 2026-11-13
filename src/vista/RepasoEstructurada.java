@@ -48,15 +48,7 @@ public class RepasoEstructurada {
         double calcu= peso / 3281;
         System.out.println("La cantidad en dolares americanos es: " + calcu);
         
-        // Ejercicio 4
-        // Cálculo del Área y perímetro de un círculo
-        double diame=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el diametro del circulo"));
-        double perimetro=diame*3.1416;
-        System.out.println("El perimetro del circulo es: "+perimetro);
-        double div=diame/2;
-        double radio=div*div;
-        double area=radio*3.1416;
-        System.out.println("El area del circulo es: "+ area);
+
         
     }
     
