@@ -35,21 +35,6 @@ public class RepasoEstructurada {
         double prom= sum / 3;
         System.out.println("El promedio del estudiantes es: " + prom);
 
-        
-        // Ejercicio 2
-        // Edad de la madre al dar a luz: Calcular la diferencia de edad entre una madre y su hijo dadas ambas edades.
-        int edadmadre=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese la edad de la Madre"));
-        int edadhijo=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese la edad del Hijo"));
-        int resta= edadmadre - edadhijo;
-        System.out.println("La edad de la madrea al dar a luz es: " + resta);
-        
-        
-        // Ejercicio 3
-        // Conversión de unidades: Convertir pesos colombianos a dólares.
-        double peso=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese la cantidad en pesos colombianos a transformar"));
-        double calcu= peso / 3281;
-        System.out.println("La cantidad en dolares americanos es: " + calcu);
-        
     }
     
     
