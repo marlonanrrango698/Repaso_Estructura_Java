@@ -42,6 +42,11 @@ public class RepasoEstructurada {
         int resta= edadmadre - edadhijo;
         System.out.println("La edad de la madrea al dar a luz es: " + resta);
         
+        // Ejercicio 3
+        // Conversión de unidades: Convertir pesos colombianos a dólares.
+        double peso=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese la cantidad en pesos colombianos a transformar"));
+        double calcu= peso / 3281;
+        System.out.println("La cantidad en dolares americanos es: " + calcu);
         
     }
     
