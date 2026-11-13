@@ -72,6 +72,17 @@ public class RepasoEstructurada {
         System.out.println("El area del rombo es: " + are + "cm2");
         
         
+        // Ejercicio 6
+        // Ingresar dos numeros y determinar cual de los dos es el mayor
+        double nume1=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el primer numero"));
+        double nume2=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el segundo numero"));
+         if (nume1>nume2){
+            System.out.println("El numero mayor es: "+nume1);
+        } else{ 
+            System.out.println("El numero mayor es: "+nume2);
+        }
+        
+        
     }
     
     
