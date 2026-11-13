@@ -40,13 +40,23 @@ public class RepasoEstructurada {
         int edadmadre=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese la edad de la Madre"));
         int edadhijo=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese la edad del Hijo"));
         int resta= edadmadre - edadhijo;
-        System.out.println("La edad de la madrea al dar a luz es: " + resta);
+        System.out.println("La edad de la madre al dar a luz es: " + resta);
         
         // Ejercicio 3
         // Conversión de unidades: Convertir pesos colombianos a dólares.
         double peso=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese la cantidad en pesos colombianos a transformar"));
         double calcu= peso / 3281;
         System.out.println("La cantidad en dolares americanos es: " + calcu);
+        
+        // Ejercicio 4
+        // Cálculo del Área y perímetro de un círculo
+        double diame=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el diametro del circulo"));
+        double perimetro=diame*3.1416;
+        System.out.println("El perimetro del circulo es: "+perimetro);
+        double div=diame/2;
+        double radio=div*div;
+        double area=radio*3.1416;
+        System.out.println("El area del circulo es: "+ area);
         
     }
     
