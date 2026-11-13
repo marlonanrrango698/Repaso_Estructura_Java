@@ -4,6 +4,7 @@
  */
 package vista;
 
+import javax.sound.midi.SysexMessage;
 import javax.swing.JOptionPane;
 
 /**
@@ -52,11 +53,24 @@ public class RepasoEstructurada {
         // Cálculo del Área y perímetro de un círculo
         double diame=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el diametro del circulo"));
         double perimetro=diame*3.1416;
-        System.out.println("El perimetro del circulo es: "+perimetro);
+        System.out.println("El perimetro del circulo es: "+perimetro + "cm");
         double div=diame/2;
         double radio=div*div;
         double area=radio*3.1416;
-        System.out.println("El area del circulo es: "+ area);
+        System.out.println("El area del circulo es: "+ area + "cm2");
+        
+        
+        // Ejercicio 5
+        // Cálculo del área y perímetro de un rombo
+        double lado=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese un lado del Rombo"));
+        double peri=lado*4;
+        double diagmay=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese la diagonal mayor"));
+        double diagmen=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese la diagonal menor"));
+        double multi=diagmay*diagmen;
+        double are=multi/2;
+        System.out.println("El perimetro del rombo es: " + peri + "cm");
+        System.out.println("El area del rombo es: " + are + "cm2");
+        
         
     }
     
