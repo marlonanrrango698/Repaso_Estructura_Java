@@ -128,5 +128,28 @@ public class Main {
         double multi=rombo.diagonalmayor*rombo.diagonalmenor;
         rombo.area=multi/2;
         System.out.println("El area del rombo es: "+rombo.area+"cm2");
+        System.out.println(" ");
+        
+        
+        // Ejercicio 6
+        // Ingresar dos numeros y determinar cual de los dos es el mayor
+        
+        // CONSTRUCTOR VACIO
+        
+        Numero pnum=new Numero();
+            pnum.idNumero=101;
+            pnum.valor=300;
+            pnum.tipo="Entero";
+            pnum.signo='+';
+            
+        Numero snum=new Numero(102, 400, "Entero", '+');
+        
+        if (pnum.valor>snum.valor){
+            System.out.println("El numero mayo es: "+pnum.valor);
+        }else{
+            System.out.println("El numero mayo es: "+snum.valor);
+        }
+
+        
     }
 }
