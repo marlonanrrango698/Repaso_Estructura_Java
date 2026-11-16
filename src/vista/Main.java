@@ -5,6 +5,7 @@
 package vista;
 
 import modelo.Numero;
+import modelo.Persona;
 
 /**
  *
@@ -49,13 +50,37 @@ public class Main {
         
         double sum=nota1.valor+nota2.valor+nota3.valor;
         double promedio=sum/3;
+        System.out.println(" ");
         System.out.println("El promedio del Estudiante es: "+promedio);
         if (promedio >7){
             System.out.println("Aprobado");
         }else{
             System.out.println("Supletorio");
         }
+        System.out.println(" ");
+
+        // Ejercicio 2
+        // Edad de la madre al dar a luz: Calcular la diferencia de edad entre una madre y su hijo dadas ambas edades.
+
+        // Constructor Vacio
+        Persona madre=new Persona();
+        madre.cedula="1002676441";
+        madre.nombres="Maria Isabella";
+        madre.apellidos="Carapaz Ortega";
+        madre.edad=45;
+        madre.sexo="Femenino";
+        madre.direccion="Ibarra";
+        madre.telefono="0946258734";
+        madre.correo="maria@gmail.com";
         
+        // Constructor con argumentos
+        Persona hijo=new Persona("1005444698", "Jose Esteban", "Aguilar Carapaz", 55, "Masculino", "Ibarra", "0945316875", "esteban@gmail.com");
+        if (hijo.edad>madre.edad){
+            System.out.println("La edad del hijo es incorrecta");
+        }else{
+           int sumaedades=madre.edad-hijo.edad; 
+           System.out.println("La edad de la Sra "+madre.nombres+" "+madre.apellidos+" es "+ sumaedades+" años.");
+        }
         
     }
 }
