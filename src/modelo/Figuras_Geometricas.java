@@ -37,8 +37,8 @@ public class Figuras_Geometricas {
         this.diagonalmayor=diagonalmayor;
         this.diagonalmenor=diagonalmenor;
     
-    }
-    }
-    
-    
+        }
 }
+    
+    
+

@@ -116,5 +116,17 @@ public class Main {
         System.out.println("El area del circulo es: "+circulo.area+"cm2");
         System.out.println(" ");
         
+        
+        // Ejercicio 5
+        // Cálculo del área y perímetro de un rombo
+        
+        // CONSTRUCTOR CON ARGUMENTOS
+        Figuras_Geometricas rombo=new Figuras_Geometricas(501, "Rombo", promedio, 0, div, suma, 4, 15, 10);
+        rombo.perimetro=rombo.lado*4;
+        System.out.println("El perimetro del rombo es: "+rombo.perimetro+"cm");
+        System.out.println(" ");
+        double multi=rombo.diagonalmayor*rombo.diagonalmenor;
+        rombo.area=multi/2;
+        System.out.println("El area del rombo es: "+rombo.area+"cm2");
     }
 }
