@@ -4,8 +4,10 @@
  */
 package vista;
 
+import javax.swing.JOptionPane;
 import modelo.Numero;
 import modelo.Persona;
+import modelo.Moneda;
 
 /**
  *
@@ -81,6 +83,21 @@ public class Main {
            int sumaedades=madre.edad-hijo.edad; 
            System.out.println("La diferencia de edad entre la Sra "+madre.nombres+" "+madre.apellidos+" y el Sr "+hijo.nombres+" "+hijo.apellidos+" es "+ sumaedades+" años.");
         }
+        System.out.println(" ");
+       
+        // Ejercicio 3
+        // Conversión de unidades: Convertir pesos colombianos a dólares.
+        
+        // Constructor Vacio
+        Moneda pesoc=new Moneda();
+        pesoc.idMoneda=401;
+        pesoc.nombre="Peso Colombiano";
+        pesoc.conversion=55000;
+        pesoc.pais="Colombia"; 
+        
+        double calcu= pesoc.conversion / 3311;
+        System.out.println("La cantidad en dolares americanos es: " + calcu);
+        
         
         
     }
