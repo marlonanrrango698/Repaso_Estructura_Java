@@ -4,10 +4,10 @@
  */
 package vista;
 
-import javax.swing.JOptionPane;
 import modelo.Numero;
 import modelo.Persona;
 import modelo.Moneda;
+import modelo.Figuras_Geometricas;
 
 /**
  *
@@ -97,8 +97,24 @@ public class Main {
         
         double calcu= pesoc.conversion / 3311;
         System.out.println("La cantidad en dolares americanos es: " + calcu);
+        System.out.println(" ");
         
+        // Ejercicio 4
+        // Cálculo del Área y perímetro de un círculo
         
+        // Constructor Vacio
+        Figuras_Geometricas circulo=new Figuras_Geometricas();
+        circulo.idFigura=500;
+        circulo.nombre="Circulo";
+        circulo.diametro=15;
+        circulo.perimetro= circulo.diametro*3.1416;
+        System.out.println("El perimetro del circulo es: "+circulo.perimetro+"cm");
+        System.out.println(" ");
+        double div=circulo.diametro/2;
+        circulo.radio=div*div;
+        circulo.area=circulo.radio*3.1416;
+        System.out.println("El area del circulo es: "+circulo.area+"cm2");
+        System.out.println(" ");
         
     }
 }
