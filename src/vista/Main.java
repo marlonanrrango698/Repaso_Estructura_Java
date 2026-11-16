@@ -74,13 +74,14 @@ public class Main {
         madre.correo="maria@gmail.com";
         
         // Constructor con argumentos
-        Persona hijo=new Persona("1005444698", "Jose Esteban", "Aguilar Carapaz", 55, "Masculino", "Ibarra", "0945316875", "esteban@gmail.com");
+        Persona hijo=new Persona("1005444698", "Jose Esteban", "Aguilar Carapaz", 50, "Masculino", "Ibarra", "0945316875", "esteban@gmail.com");
         if (hijo.edad>madre.edad){
             System.out.println("La edad del hijo es incorrecta");
         }else{
            int sumaedades=madre.edad-hijo.edad; 
-           System.out.println("La edad de la Sra "+madre.nombres+" "+madre.apellidos+" es "+ sumaedades+" años.");
+           System.out.println("La diferencia de edad entre la Sra "+madre.nombres+" "+madre.apellidos+" y el Sr "+hijo.nombres+" "+hijo.apellidos+" es "+ sumaedades+" años.");
         }
+        
         
     }
 }
