@@ -28,8 +28,30 @@ public class Numero {
         this.valor=valor;
         this.tipo=tipo;
         this.signo=signo;
+    }   
         
+    // MÉTODOS DE LOGICA DE NEGOCIO
+    
+    //MÉTODO DE NO RETORNO
+    //PROGRAMACIÓN ESTRUCTURADA 
+    public void calcularSuma(double n2){
+        double n1=this.valor;
+        double suma=n1+n2;
+        System.out.println("La suma es: "+suma);
+    } 
+    // POO
+    // MÉTODO VOID CON ARGUMENTOS
+    public void calcularSuma(Numero n1,Numero n2){
+        double suma=n1.valor+n2.valor;
+        System.out.println("La suma es: "+suma); 
     } 
     
+    //MÉTODO DE RETORNO SOLO CON UN ARGUMENTO
+    public double calcularSuma(Numero n){
+        double suma=this.valor+n.valor;
+        System.out.println("La suma es: "+suma);
+        return suma;
+    }
     
+
 }

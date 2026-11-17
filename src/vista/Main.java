@@ -150,6 +150,14 @@ public class Main {
             System.out.println("El numero mayo es: "+snum.valor);
         }
 
+        // CONSUMIR MÉTODOS DE LOGICA DE NEGOCIO
+        System.out.println("=" +n1.calcularSuma(n2));
         
+        // CREANDO OBJETO
+        Numero n3=new Numero();
+        n3.valor=63.12;
+        System.out.println("---------");
+        n3.calcularSuma(n1.valor);
+        n3.calcularSuma(n2, n3);
     }
 }
